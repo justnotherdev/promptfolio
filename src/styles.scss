@@ -1,1 +1,119 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Import Pico
+// @import "@picocss/pico/scss/pico";
+
+$primary-color: #010A14;
+
+* {
+    font-family: 'CascadiaCode', monospace;
+}
+
+html {
+    background-color: beige !important;
+}
+
+html,
+body {
+    background-color: $primary-color;
+    height: 100%;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+pre {
+    margin: 0;
+}
+
+.screen {
+    background-color: red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+// html,
+// body,
+// body>div:first-child,
+// div#__next,
+// div#__next>div {
+//     height: 100%;
+//     overflow: auto;
+// }
+
+// ::-webkit-scrollbar {
+//     width: 10px;
+//     height: 10px;
+// }
+
+// ::-webkit-scrollbar-thumb {
+//     border-radius: 5px;
+// }
+
+// a {
+//     text-decoration: underline;
+// }
+
+.terminal {
+    background-color: blue;
+    border-color: turquoise;
+    padding: 16px;
+    border-width: 3px;
+    border-radius: 5px;
+    border-style: solid;
+    height: 40vh;
+    width: 60vw;
+
+
+    // borderColor: theme.yellow;
+    // padding: config.border ? 16: 8,
+    // borderWidth: config.border ? 2: 0,
+}
+
+.cmdline-prompt {
+    display: flex;
+    flex-direction: row;
+
+    .prompt {
+        flex-shrink: 1;
+    }
+
+    .cmdline {
+        margin-left: .5rem;
+        flex-grow: 1;
+        background-color: $primary-color;
+
+        input {
+            width: 100%;
+            background-color: $primary-color;
+            border: none;
+            outline: none;
+        }
+    }
+
+    .prev-cmdline {
+        margin-left: .5rem;
+        flex-grow: 1;
+    }
+
+}
+
+.output {
+    line-height: normal;
+    margin-bottom: .5rem;
+}
+
+.hola {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}

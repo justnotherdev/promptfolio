@@ -1,0 +1,10 @@
+{
+    "bioUrl": "https://raw.githubusercontent.com/justnotherdev/justnotherdev/main/README.md",
+    "social": {
+        "instagram": "justnotherdev",
+        "github": "justnotherdev",
+        "linkedin": "justnotherdev"
+    },
+    "theme": "dracula",
+    "border": true
+}
