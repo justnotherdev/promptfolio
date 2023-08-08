@@ -7,7 +7,7 @@ import { HistoryService } from "src/app/services/history.service";
     templateUrl: './history.component.html',
     //   styleUrls: ['./command-line.component.scss']
 })
-export class HistoryComponent {
+export class HistoryComponent implements OnInit {
     history: Array<PrevCommand> = [];
 
     constructor(private _historyService: HistoryService) {
@@ -15,12 +15,8 @@ export class HistoryComponent {
     }
 
 
-    // ngOnInit(): void {
-    //     console.log("init called");
-    //     this._historyService.updateHistory({ id: 1, command: "sudo", date: new Date(), output: 'error' });
-    //     this._historyService.updateHistory({ id: 2, command: "echo", date: new Date(), output: 'xd' });
-    //     this._historyService.updateHistory({ id: 3, command: "whoami", date: new Date(), output: 'takeo' });
-    //     console.log(this.history);
-    // }
+    ngOnInit(): void {
+        this._historyService.setRecord("help");
+    }
 
 }

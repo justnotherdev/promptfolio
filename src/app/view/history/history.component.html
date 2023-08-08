@@ -1,12 +1,13 @@
-<section>
-    <div *ngIf="history.length>0">
+<!-- <div *ngIf="history.length>0"> -->
 
-        <div *ngFor="let cmd of history" class="flex flex-row space-x-2">
-            <!-- <div class="flex-shrink">
+<div *ngFor="let cmd of history">
+    <!-- <div class="flex-shrink">
                 <prompt />
             </div> -->
-            <!-- <div class="flex-grow">gola</div> -->
-            <previous-command [prevCommand]="cmd" />
-        </div>
-    </div>
-</section>
+    <!-- <div class="flex-grow">gola</div> -->
+    <!-- <div class="flex flex-row space-x-2"> -->
+    <previous-command [prevCommand]="cmd" />
+    <!-- </div> -->
+
+</div>
+<!-- </div> -->

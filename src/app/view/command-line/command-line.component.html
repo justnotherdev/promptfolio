@@ -1,4 +1,7 @@
 <input #input type="text" aria-label="prompt"
-    [style]="{'color': commandExits(command) || command === '' ?'green':'red' }" value="{{command}}"
+    [ngClass]="commandExits(command) ? 'syntax-highlight-on' : 'syntax-highlight-off'" value="{{command}}"
     (keyup)="setValue(input.value)" autoFocus (keydown)="onSubmit($event)" autoComplete="off" autoCorrect="off"
-    autoCapitalize="off" />
+    autoCapitalize="off" spellcheck="false" />
+
+
+<!-- [style]="{'color': commandExits(command) || command === '' ?'green':'red' }" -->

@@ -11,8 +11,9 @@ export class PreviousCommandComponent implements OnInit {
     @Input({ required: true }) prevCommand!: PrevCommand;
 
 
-    ngOnInit = (): void => {
+    ngOnInit(): void {
         console.log("init called");
+        console.log(this.prevCommand.output);
     }
 
 }

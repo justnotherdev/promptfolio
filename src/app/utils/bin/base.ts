@@ -1,24 +1,60 @@
 
+import * as bin from './index';
+
+export const help = async (args: string[]): Promise<string> => {
+    const commands = Object.keys(bin).sort().join(',  ');
+
+    return 'Available commands:\n\n' +
+        `${commands}\n\n` +
+        '[ ctrl + l ]\t\t clear terminal.\n' +
+        '[ ctrl + c ]\t\t cancel command.\n' +
+        '[ tab ]\t\t\t trigger command completion.\n\n\n' +
+        '------\n' +
+        '* type the command \'website\' to go to launch the graphic version of this site.\n\n';
+};
 
 export const echo = async (args: string[]): Promise<string> => {
     return args.join(' ');
 };
 
+export const about = async (args: string[]): Promise<string> => {
+    return 'FullStack Dev training for DevOps.';
+};
+
 export const whoami = async (args: string[]): Promise<string> => {
-    return 'takeo';
+    return 'root';
+};
+
+export const uname = async (args: string[]): Promise<string> => {
+    return 'SebFOS Coruscant 1.0.0 Linux Kernel Version 12.3.5: Wed Jul  5 15:10:07; arm64';
 };
 
 export const date = async (args: string[]): Promise<string> => {
     return new Date().toString();
 };
 
-export const gui = async (args: string[]): Promise<string> => {
-    setTimeout(() => window.open('https://facebook.com', '_self'), 1000);
-    return 'opening GUI version...';
+export const website = async (args: string[]): Promise<string> => {
+    // setTimeout(() => window.open('https://justanotherdev.com', '_self'), 1000);
+    setTimeout(() => {
+        const screen = document.querySelector('.screen') as HTMLInputElement;
+        screen.classList.toggle('shutdown');
+        // window.open('https://facebook.com', '_self')
+    }, 2000);
+    // return '* opening GUI version...';
+    return 'bin/LLLPBTransportControl -ok 2\n' +
+        '* Starting up ...\n' +
+        '* PSU online\n' +
+        '* HV online\n' +
+        '* Analog core memory ... OK!\n' +
+        '* Booting pattern recognition systems\n' +
+        '* Merging current data model\n' +
+        '* Starting transportation\n' +
+        '* Binary transport tests OK!\n' +
+        '* Calibrating portal with binary transport\n';
 };
 
 export const sudo = async (args?: string[]): Promise<string> => {
-    setTimeout(() => window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), 1000);
+    // setTimeout(() => window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ'), 1000);
 
     if (args && args[0]) {
         return `permission denied: unable to run the command '${(args) ? args[0] : ""}' as root.`;
@@ -32,5 +68,10 @@ export const sudo = async (args?: string[]): Promise<string> => {
 export const repo = async (args?: string[]): Promise<string> => {
     setTimeout(() => window.open('https://github.com/justnotherdev', '_blank'), 1000);
 
-    return 'opening repository...';
+    return '* Opening repository...';
 };
+
+// export const banner = (args?: string[]): string => {
+//     return '\nType \'help\' to see list of available commands. \n\n\n' +
+//         '* This project is open-source type, fill free to clone it.\n';
+// };
