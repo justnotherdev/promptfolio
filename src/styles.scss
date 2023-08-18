@@ -1,7 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
-
-$primary-color: #010A14;
-$tron-blue: #c1effb;
+:root {
+    --primary-color: #010A14;
+    --tron-blue: #C1EFFB; // or any global you wish to share with components 
+}
 
 @font-face {
     font-family: 'Orbitron';
@@ -15,123 +16,19 @@ $tron-blue: #c1effb;
     display: swap;
 }
 
-
 * {
     font-family: 'Orbitron';
     box-sizing: border-box;
     border: 0 solid;
 }
 
-html {
-    background-color: $primary-color !important;
-}
-
-body {
-    margin: 0;
-}
-
-// html,
-// body {
-//     background-color: $primary-color;
-//     height: 100%;
-//     margin: 0;
-//     // word-wrap: break-word;
-// }
-
 html,
-body,
-body>div:first-child,
-div#__next,
-div#__next>div {
+body {
+    background-color: black;
     height: 100%;
+    margin: 0;
     overflow: auto;
 }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// h5,
-// h6,
-// hr,
-// p,
-// pre {
-//     margin: 0;
-// }
-
-.screen {
-    height: 100%;
-    width: 100%;
-    padding: .5rem;
-    background-color: $primary-color;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.terminal-container {
-    background-color: rgb(193, 239, 251, .03);
-    height: 60%;
-    width: 60%;
-    padding: 16px;
-    overflow: hidden;
-    color: $tron-blue;
-    // box-sizing: border-box;
-
-    border-width: 3px;
-    // border-style: solid;
-    border-radius: .25rem;
-    border-color: $tron-blue;
-
-    // height: 40vh;
-    // width: 60vw;
-}
-
-.terminal {
-    overflow-y: auto;
-    height: 100%;
-}
-
-.cmdline-prompt {
-    display: flex;
-    flex-direction: row;
-    font-size: 13px;
-}
-
-.prompt {
-    flex-shrink: 1;
-}
-
-.cmdline {
-    flex-grow: 1;
-    margin-left: .5rem;
-
-    input {
-        background-color: rgb(193, 239, 251, .001);
-        width: 100%;
-        outline: 2px solid transparent;
-        outline-offset: 2px;
-
-    }
-}
-
-.prev-cmdline {
-    flex-grow: 1;
-    margin-left: .5rem;
-}
-
-.output {
-    margin: 0;
-    font-size: 13px;
-    line-height: normal;
-    margin-top: .2rem;
-    margin-bottom: .5rem;
-    white-space: pre-wrap;
-    // word-wrap: break-word;
-}
-
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -143,33 +40,11 @@ div#__next>div {
 }
 
 
-.shutdown {
-    animation: shutdown 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06) forwards;
-}
-
-@keyframes shutdown {
-    0% {
-        transform: scaleY(1) scaleX(1);
-    }
-
-    70% {
-        transform: scaleY(0.01) scaleX(1);
-    }
-
-    100% {
-        transform: scaleY(0) scaleX(0);
-        opacity: 0;
-    }
-}
-
-.syntax-highlight-on {
-    color: $tron-blue;
-}
-
-.syntax-highlight-off {
-    color: #FFFFFF;
-}
-
-a {
-    text-decoration: underline;
-}
+// html,
+// body,
+// body>div:first-child,
+// div#__next,
+// div#__next>div {
+//     height: 100%;
+//     overflow: auto;
+// }

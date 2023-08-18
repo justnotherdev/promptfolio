@@ -3,14 +3,10 @@ import * as bin from '../utils/bin';
 import { PrevCommand } from '../model/prev-command';
 
 @Injectable()
-export class HistoryService implements OnInit {
+export class HistoryService {
     history: Array<PrevCommand> = [];
     record: string = '';
     lastCommandIndex: number = 0;
-
-    ngOnInit(): void {
-        console.log("ESTO ES DEL SERVICE");
-    }
 
     getLastCommandIndex() {
         return this.lastCommandIndex;
@@ -60,7 +56,6 @@ export class HistoryService implements OnInit {
                 } else {
                     try {
                         const output = await Object.create(bin)[cmd](args);
-                        console.log(output);
                         this.updateHistory(output);
                     } catch (error) {
                         this.updateHistory('paso un error');

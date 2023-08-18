@@ -10,7 +10,7 @@ export const help = async (args: string[]): Promise<string> => {
         '[ ctrl + c ]\t\t cancel command.\n' +
         '[ tab ]\t\t\t trigger command completion.\n\n\n' +
         '------\n' +
-        '* type the command \'website\' to go to launch the graphic version of this site.\n\n';
+        '* type the command \'launch\' to go to the graphic version of this site.\n\n';
 };
 
 export const echo = async (args: string[]): Promise<string> => {
@@ -33,21 +33,18 @@ export const date = async (args: string[]): Promise<string> => {
     return new Date().toString();
 };
 
-export const website = async (args: string[]): Promise<string> => {
-    // setTimeout(() => window.open('https://justanotherdev.com', '_self'), 1000);
-    setTimeout(() => {
-        const screen = document.querySelector('.screen') as HTMLInputElement;
-        screen.classList.toggle('shutdown');
-        // window.open('https://facebook.com', '_self')
-    }, 2000);
-    // return '* opening GUI version...';
+export const launch = async (args: string[]): Promise<string> => {
+
+    const screen = document.querySelector('.screen') as HTMLInputElement;
+    setTimeout(() => screen.classList.toggle('shutdown-terminal'), 2000);
+
     return 'bin/LLLPBTransportControl -ok 2\n' +
         '* Starting up ...\n' +
         '* PSU online\n' +
         '* HV online\n' +
-        '* Analog core memory ... OK!\n' +
-        '* Booting pattern recognition systems\n' +
-        '* Merging current data model\n' +
+        '* Digital core memory ... OK!\n' +
+        '* Booting routing systems\n' +
+        '* Validating current data model\n' +
         '* Starting transportation\n' +
         '* Binary transport tests OK!\n' +
         '* Calibrating portal with binary transport\n';

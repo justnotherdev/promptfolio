@@ -1,13 +1,13 @@
-import { Component, DoCheck, ElementRef, Input, ViewChild } from '@angular/core';
-import { commandExists } from '../../utils/command-exists';
-import { handleTabCompletion } from '../../utils/tab-completion';
+import { Component, DoCheck, ElementRef, ViewChild } from '@angular/core';
 import { HistoryService } from 'src/app/services/history.service';
-import { date } from 'src/app/utils/bin';
+import { commandExists } from '../utils/command-exists';
+import { handleTabCompletion } from '../utils/tab-completion';
+import { Router } from '@angular/router'
 
 @Component({
-    selector: 'command-line',
-    templateUrl: './command-line.component.html',
-    //   styleUrls: ['./command-line.component.scss']
+    selector: 'app-command',
+    templateUrl: './command.component.html',
+    styleUrls: ['./command.component.scss']
 })
 export class CommandLineComponent implements DoCheck {
 
@@ -15,7 +15,10 @@ export class CommandLineComponent implements DoCheck {
 
     command: string = '';
 
-    constructor(private _service: HistoryService) { }
+    constructor(
+        private router: Router,
+        private _service: HistoryService,
+    ) { }
 
     ngDoCheck(): void {
         let term = document.getElementsByClassName("terminal")[0];
@@ -51,10 +54,16 @@ export class CommandLineComponent implements DoCheck {
         }
 
         if (event.key === 'Enter' || event.code === '13') {
+            let executedCommand = this.command;
             event.preventDefault();
             this._service.setLastCommandIndex(0);
             this._service.setRecord(this.command);
             this.setValue('');
+            if (executedCommand === 'launch') {
+
+                setTimeout(() => this.router.navigate(['portfolio']), 2800);
+
+            }
         }
 
         if (event.key === 'ArrowUp') {

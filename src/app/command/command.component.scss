@@ -1,0 +1,18 @@
+a {
+    text-decoration: underline;
+}
+
+input {
+    background-color: rgb(193, 239, 251, .001);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    width: 100%;
+}
+
+.syntax-highlight-on {
+    color: var(--tron-blue);
+}
+
+.syntax-highlight-off {
+    color: #FFFFFF;
+}

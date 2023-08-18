@@ -1,0 +1,23 @@
+.prompt {
+    flex-shrink: 1;
+}
+
+.command-line {
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+}
+
+.prev-cmd {
+    flex-grow: 1;
+    margin-left: .5rem;
+}
+
+.output {
+    margin: 0;
+    font-size: 13px;
+    line-height: normal;
+    margin-top: .2rem;
+    margin-bottom: .5rem;
+    white-space: pre-wrap;
+}

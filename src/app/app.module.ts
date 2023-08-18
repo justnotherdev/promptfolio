@@ -1,14 +1,17 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CommandLineComponent } from './view/command-line/command-line.component';
-import { PromptComponent } from './view/prompt/prompt.component';
-import { HistoryComponent } from './view/history/history.component';
-import { PreviousCommandComponent } from './view/previous-command/previous-command.component';
-import { CommonModule } from '@angular/common';
+import { CommandLineComponent } from './command/command.component';
+import { HistoryComponent } from './history/history.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { PreviousCommandComponent } from './previous-command/previous-command.component';
+import { PromptComponent } from './prompt/prompt.component';
 import { HistoryService } from './services/history.service';
+import { TerminalComponent } from './terminal/terminal.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { HistoryService } from './services/history.service';
     CommandLineComponent,
     HistoryComponent,
     PreviousCommandComponent,
+    PortfolioComponent,
+    TerminalComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
@@ -28,7 +34,6 @@ import { HistoryService } from './services/history.service';
   ],
   bootstrap: [
     AppComponent,
-    // PreviousCommandComponent,
   ]
 })
 export class AppModule { }

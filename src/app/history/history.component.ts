@@ -5,7 +5,6 @@ import { HistoryService } from "src/app/services/history.service";
 @Component({
     selector: 'app-history',
     templateUrl: './history.component.html',
-    //   styleUrls: ['./command-line.component.scss']
 })
 export class HistoryComponent implements OnInit {
     history: Array<PrevCommand> = [];
