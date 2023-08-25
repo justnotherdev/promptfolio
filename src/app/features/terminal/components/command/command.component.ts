@@ -1,7 +1,7 @@
 import { Component, DoCheck, ElementRef, ViewChild } from '@angular/core';
-import { HistoryService } from 'src/app/services/history.service';
-import { commandExists } from '../utils/command-exists';
-import { handleTabCompletion } from '../utils/tab-completion';
+import { HistoryService } from 'src/app/features/terminal/services/history.service';
+import { commandExists } from '../../utils/command-exists';
+import { handleTabCompletion } from '../../utils/tab-completion';
 import { Router } from '@angular/router'
 
 @Component({
@@ -61,7 +61,7 @@ export class CommandLineComponent implements DoCheck {
             this.setValue('');
             if (executedCommand === 'launch') {
 
-                setTimeout(() => this.router.navigate(['portfolio']), 2800);
+                setTimeout(() => this.router.navigate(['me']), 2800);
 
             }
         }

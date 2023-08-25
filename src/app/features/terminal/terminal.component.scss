@@ -1,7 +1,6 @@
 .screen {
-    background-color: var(--primary-color);
-    color: var(--tron-blue);
-    padding: .5rem;
+    color: var(--tertiary-color);
+    padding: .5rem !important; 
     height: 100%;
     width: 100%;
 
@@ -15,11 +14,11 @@
     background-color: rgb(193, 239, 251, .03);
     height: 60%;
     width: 60%;
-    padding: 16px;
+    padding: 16px !important;
     overflow: hidden;
     border-width: 3px;
     border-radius: .25rem;
-    border-color: var(--tron-blue);
+    border-color: var(--tertiary-color);
 }
 
 .terminal {

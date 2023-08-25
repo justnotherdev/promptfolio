@@ -1,0 +1,37 @@
+<div class="carousel">
+
+
+    <div class="carousel__control carousel__control_left" (click)="onPreviousClick()">
+        <i class="uil uil-angle-left-b"></i>
+    </div>
+
+    <div class="carousel__content">
+        <ng-container *ngFor="let slide of slides; let i = index">
+
+            <ng-container *ngIf="i === currentSlide">
+
+
+                <ng-template [ngTemplateOutlet]="slideTemplateRef"
+                    [ngTemplateOutletContext]="{$implicit: slide}"></ng-template>
+            </ng-container>
+
+
+        </ng-container>
+    </div>
+
+    <div class="carousel__control carousel__control_right" (click)="onNextClick()">
+        <i class="uil uil-angle-right-b right"></i>
+    </div>
+    <!-- controls -->
+    <!-- <button class="control prev" (click)="onPreviousClick()">
+        <span class="arrow left"></span>
+    </button>
+    <button class="control next" (click)="onNextClick()">
+        <span class="arrow right"></span>
+    </button> -->
+
+</div>
+
+<!-- <tr *ngFor="let item of data">
+
+</tr> -->

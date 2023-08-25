@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
-import { PrevCommand } from "src/app/model/prev-command";
+import { PrevCommand } from "src/app/features/terminal/model/prev-command";
 
 @Component({
     selector: 'app-prev-cmd',

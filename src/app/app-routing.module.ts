@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TerminalComponent } from './terminal/terminal.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+import { TerminalComponent } from './features/terminal/terminal.component';
+import { WebsiteComponent } from './features/website/website.component';
+import { NotFoundComponent } from './core/not-found/not-found.component';
 
 const routes: Routes = [
   { path: 'terminal', component: TerminalComponent },
-  { path: 'portfolio', component: PortfolioComponent, },
-  { path: '', redirectTo: '/terminal', pathMatch: 'full' },
+  { path: 'me', component: WebsiteComponent, },
+  // { path: '', redirectTo: '/terminal', pathMatch: 'full' },
   { path: '**', component: NotFoundComponent }
 ];
 

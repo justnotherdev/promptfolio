@@ -1,0 +1,8 @@
+<div class="qualification__tabs">
+    <div class="qualification__button button--flex" *ngFor="let tab of tabs" (click)="selectTab(tab)"
+        [class.qualification__active_tab]="tab.active">
+        <i class="uil {{tab.icon}} qualification__icon"></i>
+        <div>{{tab.title}}</div>
+    </div>
+</div>
+<ng-content></ng-content>

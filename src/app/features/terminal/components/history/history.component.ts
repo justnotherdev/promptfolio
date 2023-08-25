@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { PrevCommand } from "src/app/model/prev-command";
-import { HistoryService } from "src/app/services/history.service";
+import { PrevCommand } from "src/app/features/terminal/model/prev-command";
+import { HistoryService } from "src/app/features/terminal/services/history.service";
 
 @Component({
     selector: 'app-history',
@@ -15,7 +15,7 @@ export class HistoryComponent implements OnInit {
 
 
     ngOnInit(): void {
-        this._historyService.setRecord("help");
+        this._historyService.setRecord("motd");
     }
 
 }

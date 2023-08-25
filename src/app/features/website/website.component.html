@@ -1,0 +1,596 @@
+<div style="display: block;">
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo" (click)="scrollToElement(home)">JustAnotherDev</div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <div class="nav__link" (click)="scrollToElement(home)">
+                            <i class="uil uil-estate nav__icon"></i> Home
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <div class="nav__link" (click)="scrollToElement(about)">
+                            <i class="uil uil-user nav__icon"></i> About
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <div class="nav__link" (click)="scrollToElement(skills)">
+                            <i class="uil uil-file-alt nav__icon"></i> Skills
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <div class="nav__link" (click)="scrollToElement(qualification)">
+                            <i class="uil uil-briefcase-alt nav__icon"></i> Qualification
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <div class="nav__link" (click)="scrollToElement(projects)">
+                            <i class="uil uil-scenery nav__icon"></i> Projects
+                        </div>
+                    </li>
+                    <li class="nav__item">
+                        <div class="nav__link" (click)="scrollToElement(contactme)">
+                            <i class="uil uil-message nav__icon"></i> Contactme
+                        </div>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav__close" (click)="hideMenu()"></i>
+
+            </div>
+
+            <div class="nav__btns">
+                <div id="nav-toggle" class="nav__toggle">
+                    <i class="uil uil-apps" (click)="showMenu()"></i>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main">
+        <section #home class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content grid">
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-linkedin-alt"></i>
+                        </a>
+                        <a href="https://www.github.com/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" class="home__social-icon">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                    </div>
+                    <div class="home__img">
+                        <img class="home__blob" src="../../../assets/images/profile_image.jpg" alt="">
+                        <!-- here should go a image or a redirection to resume -->
+                    </div>
+                    <div class="home__data">
+                        <!-- <h1 class="home__greet">Hello there,</h1> -->
+                        <h3 class="home__greet"> {{"\<h3> Hello there <\/h3>"}}</h3>
+                        <h1 class="home__title">I'm Sebastian</h1>
+                        <h3 class="home__subtitle"> {{"\<h2> Software Engineer <\/h2>"}}</h3>
+                        <!-- <h3 class="home__subtitle"> Software Engineer</h3> -->
+                        <p class="home__description"> {{"\<p> Passioned about automation. Have experience in Web and Mobile development, currently in way to learn all I can about DevOps Tech. I like to find ways to improve Developer Experience (DX) for me and my team. <\/p>"}}</p>
+                        <!-- <p class="home__description">
+                            Passioned about automation. Have experience in Web and Mobile development, currently in way
+                            to learn all I can about DevOps Tech. I like to find ways to improve Development Experience
+                            (DX) for me and my team.
+                        </p> -->
+                        <div class="button button--flex home__button" (click)="scrollToElement(contactme)">
+                            Contact Me <i class="uil uil-message button__icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="home__scroll">
+                    <a href="" class="home__scroll-button button--flex">
+                        <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                        <span class="home__scroll-name">Scroll down</span>
+                        <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section #about class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+            <div class="about__container container grid">
+                <img src="../../../assets/images/landscape_image_placeholder.svg" alt="">
+                <div>
+                    <div class="about__data">
+                        <p class="about__description">
+                            Software Developer with extensive knowledge and experience working with web and mobile
+                            technologies. Mainly involve in code sanity and product delivery. Experience in DevOps
+                            field, my
+                            main objective is to define a well-design development cycle chain and find the most
+                            efficient
+                            way to deliver any software product.
+                        </p>
+                    </div>
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">05+</span>
+                            <span class="about__info-name">Years <br> experience</span>
+                        </div>
+                        <!-- <div>
+                            <span class="about__info-title">20+</span>
+                            <span class="about__info-name">Completed <br> projects</span>
+                        </div> -->
+                        <div>
+                            <span class="about__info-title">03+</span>
+                            <span class="about__info-name">Companies <br> worked</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section #skills class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+            <div class="skills__container container grid">
+
+                <div class="skills__content skills__open">
+                    <div class="skills__header" (click)="showSkill($event)">
+                        <!-- <i class="uil uil-server skills__icon"></i> -->
+                        <!-- <i class="uil uil-code-branch skills__icon"></i> -->
+                        <i class="uil uil-docker skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title">DevOps</h1>
+                            <span class="skills__subtitle">More than 1 year</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Linux</h3>
+                                <span class="skills__number">Ultimate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__linux"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Docker</h3>
+                                <span class="skills__number">Ultimate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__docker"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Kubernetes</h3>
+                                <span class="skills__number">Champion</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__kubernetes"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Jenkins</h3>
+                                <span class="skills__number">Rookie</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__jenkins"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content skills__close">
+                    <div class="skills__header" (click)="showSkill($event)">
+                        <!-- <i class="uil uil-brackets-curly skills__icon"></i> -->
+                        <i class="uil uil-layer-group skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title"> Software Architecture</h1>
+                            <span class="skills__subtitle">More than 3 years</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Clean Architecture</h3>
+                                <span class="skills__number">Ultimate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__clean_arch"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Architectural Patterns</h3>
+                                <span class="skills__number">Ultimate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__arch_patterns"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Enterprise Patterns</h3>
+                                <span class="skills__number">Champion</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__entr_patterns"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__content skills__close">
+                    <div class="skills__header" (click)="showSkill($event)">
+                        <!-- <i class="uil uil-brackets-curly skills__icon"></i> -->
+
+                        <i class="uil uil-globe skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title"> FullStack Development (Web)</h1>
+                            <span class="skills__subtitle">More than 5 years</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Git</h3>
+                                <span class="skills__number">Mega</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__git"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">AngularJS</h3>
+                                <span class="skills__number">Ultimate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__angular"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">NodeJS</h3>
+                                <span class="skills__number">Ultimate</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__nodejs"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Java</h3>
+                                <span class="skills__number">Champion</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__angular"></span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Firebase</h3>
+                                <span class="skills__number">Champion</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__firebase"></span>
+                            </div>
+                        </div>
+
+                        <!-- <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">AngularJS</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills_percentage skills__angular"></span>
+                                </div>
+                            </div> -->
+                    </div>
+                </div>
+                <div class="skills__content skills__close">
+                    <div class="skills__header" (click)="showSkill($event)">
+                        <!-- <i class="uil uil-brackets-curly skills__icon"></i> -->
+                        <i class="uil uil-mobile-android skills__icon"></i>
+
+                        <div>
+                            <h1 class="skills__title"> Mobile Development</h1>
+                            <span class="skills__subtitle">More than 3 years</span>
+                        </div>
+                        <i class="uil uil-angle-down skills__arrow"></i>
+                    </div>
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Android</h3>
+                                <span class="skills__number">Champion</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__android"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Flutter</h3>
+                                <span class="skills__number">Champion</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__flutter"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- YOU COULD CHANGE THIS TO LEVELS INSTEAD OF PERCENTAGE (NOBBIE, INTERMEDIATE, SENIOR, WELL-VERSED) -->
+
+
+            </div>
+        </section>
+        <section #qualification class="qualification section">
+            <h2 class="section__title">Qualification</h2>
+            <span class="section__subtitle">My Tech Path</span>
+            <div class="qualification__container container">
+                <app-tabs>
+                    <app-tab title='Education' icon="uil-graduation-cap" class="qualification__sections">
+                        <div class="qualification__content">
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Systems Engineer</h3>
+                                    <span class="qualification__subtitle">University of Lima - Peru</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calender"></i>
+                                        2014 - 2020
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line "></span>
+                                </div>
+                            </div>
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line "></span> -->
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Systems Engineer</h3>
+                                    <span class="qualification__subtitle">University of Lima - Peru</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calender"></i>
+                                        2014 - 2020
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </app-tab>
+                    <app-tab title="Work" icon="uil-briefcase-alt" class="qualification__sections">
+                        <div class="qualification__content">
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Software Development Specialist II</h3>
+                                    <span class="qualification__subtitle">SAP - Peru</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calender"></i>
+                                        2021 - Present
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line "></span>
+                                </div>
+                            </div>
+                            <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <span class="qualification__line "></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Software Engineer</h3>
+                                    <span class="qualification__subtitle">NTT One Data - Peru</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calender"></i>
+                                        2019 - 2021
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="qualification__data">
+
+                                <div>
+                                    <h3 class="qualification__title">Mobile Engineer</h3>
+                                    <span class="qualification__subtitle">SmartBook - Peru</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calender"></i>
+                                        2018 - 2019
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line "></span> -->
+                                </div>
+
+                            </div>
+                        </div>
+                    </app-tab>
+                </app-tabs>
+            </div>
+        </section>
+        <section #projects class="projects section">
+            <h2 class="section__title">Projects</h2>
+            <span class="section__subtitle">Most recent work</span>
+            <!-- <div > -->
+            <app-carousel [slides]="slides" class="projects__container container">
+                <ng-template let-slide>
+                    <!-- <td>{{slide.src}}</td> -->
+                    <div class="projects__content grid">
+                        <img [src]="slide.image" class="projects__img slide">
+                        <div class="projects__data">
+                            <!-- <h3 class="projects__title">Promptfolio (SEARCH A BETTER NAME)</h3> -->
+                            <h3 class="projects__title">{{slide.title}}</h3>
+                            <p class="projects__description">{{slide.desc}}</p>
+                            <!-- <p class="projects__description">Personal website designed with a SynthWave style,
+                                inspired
+                                on Tron Legacy Movie. Shows a brief introduction to myself and a couple of projects
+                                and
+                                interest.</p> -->
+                            <div class="projects_button_container">
+                                <div *ngIf="slide.site" class="button button--flex button--small projects__button">
+                                    Website
+                                    <i class="uil uil-link button__icon"></i>
+                                </div>
+                                <div *ngIf="slide.repo" class="button button--flex button--small projects__button">
+                                    Source
+                                    <i class="uil uil-code-branch button__icon"></i>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </ng-template>
+            </app-carousel>
+        </section>
+        <!-- <section #idea class="idea section">
+            <div class="idea__bg">
+                <div class="idea__container container grid">
+                    <div class="idea__data">
+                        <h2 class="idea__title">You have any project or idea?</h2>
+                        <p class="idea__description">Feel free to contact me, I'll be glad to help you with it.</p>
+                        <div class="button button--flex button--white idea__button">
+                            Contact Me
+                            <i class="uil uil-message idea__icon button__icon"></i>
+                        </div>
+                    </div>
+                    <img src="" alt="" class="idea__img">
+                </div>
+            </div>
+
+        </section> -->
+        <section #contactme class="contact section">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+            <div class="contact__container container grid">
+                <div>
+                    <div class="contact__information">
+                        <i class="uil uil-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email.</h3>
+                            <span class="contact__subtitle">sebastian@justanotherdev.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Location.</h3>
+                            <span class="contact__subtitle">Lima - Peru</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="email" class="contact__input">
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <textarea name="" id="" cols="30" rows="10" class="contact__input"></textarea>
+                    </div>
+
+                    <div>
+                        <div class="button button--flex">
+                            Send Message
+                            <i class="uil uil-message button__icon"></i>
+                        </div>
+                    </div>
+                </form> -->
+            </div>
+
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Sebastian</h1>
+                    <span class="footer__subtitle">Software Engineer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <div class="footer__link">Qualification</div>
+                    </li>
+                    <li>
+                        <div class="footer__link">Projects</div>
+                    </li>
+                    <li>
+                        <div class="footer__link">Contactme</div>
+                    </li>
+
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="" target="_blank" class="footer__social">
+                        <i class="uil uil-facebook-f"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social">
+                        <i class="uil uil-instagram-alt"></i>
+                    </a>
+                    <a href="" target="_blank" class="footer__social">
+                        <i class="uil uil-linkedin"></i>
+                    </a>
+
+                </div>
+            </div>
+            <p class="footer__copy">&#169; JustAnotherDev. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <div *ngIf="scrolled" class="scrollup" (click)="scrollToElement(home)">
+        <i class="uil uil-angle-double-up scrollup__icon"></i>
+    </div>
+
+</div>
+
+<!-- <div class="decode left">Sebastian Garcia</div>
+    <div class="decode">Software Engineer and Entrepreneur</div>
+    <div class="decode right">This is a text to be decoded</div>
+    <div class="decode">Experience</div>
+    <div class="decode">Some cool projects</div> -->
+
+<!-- <div class="graph-container">
+    <div class="graph">
+
+    </div>
+</div> -->

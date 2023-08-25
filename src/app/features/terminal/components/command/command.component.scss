@@ -10,9 +10,9 @@ input {
 }
 
 .syntax-highlight-on {
-    color: var(--tron-blue);
+    color: var(--tertiary-color);
 }
 
 .syntax-highlight-off {
-    color: #FFFFFF;
+    color: var(--white-color);
 }
