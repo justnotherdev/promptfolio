@@ -15,14 +15,14 @@ export class WebsiteComponent implements OnInit {
     {
       title: "Promptfolio",
       desc: "Personal website designed with a SynthWave style, inspired on Tron Legacy Movie.\n Shows a brief introduction to myself and a couple of projects and interest.",
-      image: "https://raw.githubusercontent.com/justnotherdev/promptfolio/main/images/promptfolio.png",
+      image: "https://raw.githubusercontent.com/justnotherdev/promptfolio/main/images/promptfolio-img.png",
       site: "https://www.justanotherdev.com/terminal",
       repo: "https://github.com/justnotherdev/promptfolio",
     },
     {
       title: "CoPilot",
       desc: "Mobile App that allows to improve the interaction with your motorcycle. It provides several tools for remote engine start, monitoring, GPS tracking and diagnostics.",
-      image: "https://raw.githubusercontent.com/justnotherdev/promptfolio/main/images/copilotapp.png",
+      image: "https://raw.githubusercontent.com/justnotherdev/promptfolio/main/images/copilot-img.png",
       repo: "https://github.com/justnotherdev/copilot-app",
       // site: "sitio",
     },
