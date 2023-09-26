@@ -15,14 +15,14 @@ export class WebsiteComponent implements OnInit {
     {
       title: "Promptfolio",
       desc: "Personal website designed with a SynthWave style, inspired on Tron Legacy Movie.\n Shows a brief introduction to myself and a couple of projects and interest.",
-      image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
+      image: "https://raw.githubusercontent.com/justnotherdev/promptfolio/main/images/promptfolio.png",
       site: "https://www.justanotherdev.com/terminal",
       repo: "https://github.com/justnotherdev/promptfolio",
     },
     {
       title: "CoPilot",
       desc: "Mobile App that allows to improve the interaction with your motorcycle. It provides several tools for remote engine start, monitoring, GPS tracking and diagnostics.",
-      image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
+      image: "https://raw.githubusercontent.com/justnotherdev/promptfolio/main/images/copilot_app.png",
       repo: "https://github.com/justnotherdev/copilot-app",
       // site: "sitio",
     },
@@ -33,13 +33,13 @@ export class WebsiteComponent implements OnInit {
       // repo: "repo",
       // site: "sitio",
     },
-    {
-      title: "Let's Shoot",
-      desc: "App for archers!. Allow users to challenge other archers for a quick competition. Other features on the app are archer profile, current local, region and global rankings, equipment profiles, and more.",
-      image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
-      // repo: "repo",
-      // site: "sitio",
-    },
+    // {
+    // title: "Let's Shoot",
+    // desc: "App for archers!. Allow users to challenge other archers for a quick competition. Other features on the app are archer profile, current local, region and global rankings, equipment profiles, and more.",
+    // image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
+    // repo: "repo",
+    // site: "sitio",
+    // },
   ];
 
 
