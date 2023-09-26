@@ -15,7 +15,7 @@ export class WebsiteComponent implements OnInit {
     {
       title: "Promptfolio",
       desc: "Personal website designed with a SynthWave style, inspired on Tron Legacy Movie.\n Shows a brief introduction to myself and a couple of projects and interest.",
-      image: "https://raw.githubusercontent.com/justnotherdev/promptfolio/main/images/promptfolio-img.png",
+      image: "https://raw.githubusercontent.com/justnotherdev/promptfolio/main/images/promptfolio.png",
       site: "https://www.justanotherdev.com/terminal",
       repo: "https://github.com/justnotherdev/promptfolio",
     },
