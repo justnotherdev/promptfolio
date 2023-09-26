@@ -22,7 +22,7 @@ export class WebsiteComponent implements OnInit {
     {
       title: "CoPilot",
       desc: "Mobile App that allows to improve the interaction with your motorcycle. It provides several tools for remote engine start, monitoring, GPS tracking and diagnostics.",
-      image: "https://raw.githubusercontent.com/justnotherdev/promptfolio/main/images/copilot-img.png",
+      image: "https://raw.githubusercontent.com/justnotherdev/promptfolio/main/images/copilot-app.png",
       repo: "https://github.com/justnotherdev/copilot-app",
       // site: "sitio",
     },
