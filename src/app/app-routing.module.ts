@@ -7,8 +7,8 @@ import { NotFoundComponent } from './core/not-found/not-found.component';
 const routes: Routes = [
   { path: 'terminal', component: TerminalComponent },
   { path: 'me', component: WebsiteComponent, },
-  // { path: '', redirectTo: '/terminal', pathMatch: 'full' },
-  { path: '**', component: NotFoundComponent }
+  { path: '', redirectTo: '/terminal', pathMatch: 'full' },
+  { path: '**', redirectTo: '/terminal', }
 ];
 
 @NgModule({

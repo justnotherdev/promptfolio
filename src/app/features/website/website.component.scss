@@ -38,7 +38,7 @@ img {
 
 /*=================== LAYOUT ===================*/
 .container {
-    max-width: 768px;
+    // max-width: 768px;
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
 }
@@ -348,7 +348,7 @@ img {
 }
 
 .skills__linux {
-    width: 75%;
+    width: 90%;
 }
 
 .skills__docker {
@@ -356,7 +356,7 @@ img {
 }
 
 .skills__kubernetes {
-    width: 50%;
+    width: 75%;
 }
 
 .skills__jenkins {
@@ -371,7 +371,7 @@ img {
     width: 75%;
 }
 
-.skills__entr_patterns {
+.skills__arch_diagrams {
     width: 50%;
 }
 
@@ -384,7 +384,7 @@ img {
 }
 
 .skills__nodejs {
-    width: 75%;
+    width: 50%;
 }
 
 .skills__java {
@@ -864,6 +864,10 @@ img {
         transform: translateX(-6rem);
     }
 
+    .section {
+        padding: 6rem 4rem !important;
+    }
+
     .projects__content {
         column-gap: 5rem;
     }
@@ -908,7 +912,7 @@ img {
 //     .graph {
 //         background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0px, var(--tertiary-color) 0%, var(--tertiary-color) 3px, rgba(0, 0, 0, 0) 0px), linear-gradient(90deg, rgba(0, 0, 0, 0) 0px, var(--tertiary-color) 0%, var(--tertiary-color) 3px, rgba(0, 0, 0, 0) 0px);
 //         background-size: 4em 2em, 4em 2em;
-//         background-color: black;
+//         // background-color: black;
 //         height: 40em;
 //         perspective: 1000 px;
 //         margin-top: 20em;
@@ -925,24 +929,24 @@ img {
 //     text-align: right !important;
 // }
 
-// .decode {
-//     padding: 8px 12px !important;
-//     margin: 12px;
-//     background: black;
-//     color: white;
-//     text-align: center;
-//     font-size: 1.6rem;
-// }
+.decode {
+    // padding: 8px 12px !important;
+    // margin: 12px;
+    // background-color: var(--tertiary-color);
+    color: #9ce4f9;
+    // text-align: center;
+    // font-size: 1.6rem;
+}
 
-// @keyframes colorChangeAnimation {
-//     0% {
-//         background-color: #BADA55;
-//         color: var(--black-color);
-//     }
+@keyframes colorChangeAnimation {
+    0% {
+        // background-color: #BADA55;
+        color: var(--black-color);
+    }
 
-//     100% {
-//         background-color: var(--black-color);
-//         color: var(--white-color);
-//     }
+    100% {
+        // background-color: var(--black-color);
+        color: var(--white-color);
+    }
 
-// }
+}

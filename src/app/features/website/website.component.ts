@@ -9,36 +9,36 @@ export class WebsiteComponent implements OnInit {
   scrolled = false;
   CHAR_DURATION = 1 / 20;
   TIMEOUT_DURATION = 0.75;
-  EFFECT_COLOR = "#C1EFFB";
+  EFFECT_COLOR = "#FFFFFF";
 
   public slides = [
     {
       title: "Promptfolio",
       desc: "Personal website designed with a SynthWave style, inspired on Tron Legacy Movie.\n Shows a brief introduction to myself and a couple of projects and interest.",
       image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
-      site: "sitio",
-      repo: "repo",
+      site: "https://www.justanotherdev.com/terminal",
+      repo: "https://github.com/justnotherdev/promptfolio",
     },
     {
       title: "CoPilot",
-      desc: "Missing description",
+      desc: "Mobile App that allows to improve the interaction with your motorcycle. It provides several tools for remote engine start, monitoring, GPS tracking and diagnostics.",
       image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
-      site: "sitio",
-      repo: "repo",
+      repo: "https://github.com/justnotherdev/copilot-app",
+      // site: "sitio",
     },
     {
       title: "PetPal",
-      desc: "Missing description",
+      desc: "App that helps users find a pet or give one up for adoption. It features a Tinder-like interaction to streamline the adoption flow.",
       image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
-      site: "sitio",
       // repo: "repo",
+      // site: "sitio",
     },
     {
       title: "Let's Shoot",
-      desc: "Missing description",
+      desc: "App for archers!. Allow users to challenge other archers for a quick competition. Other features on the app are archer profile, current local, region and global rankings, equipment profiles, and more.",
       image: "https://www.svgrepo.com/show/508699/landscape-placeholder.svg",
-      site: "sitio",
       // repo: "repo",
+      // site: "sitio",
     },
   ];
 
@@ -93,6 +93,11 @@ export class WebsiteComponent implements OnInit {
     this.hideMenu()
   }
 
+  openExternalUrl(url: string) {
+    console.log(url);
+    window.open(url, '_blank')
+  }
+
 
 
   animate = (elem: any) => {
@@ -101,8 +106,8 @@ export class WebsiteComponent implements OnInit {
 
     let text = elem.innerText;
 
-    elem.style.backgroundColor = this.EFFECT_COLOR;
-    elem.style.color = "#000000";
+    // elem.style.backgroundColor = this.EFFECT_COLOR;
+    // elem.style.color = "#000000";
     elem.style.pointerEvents = "none";
     elem.style.animation = `colorChangeAnimation ${this.CHAR_DURATION * text.length + this.TIMEOUT_DURATION}s cubic-bezier(0.7, 0, 0.84, 0)`;
     elem.style.animationDelay = "0.1s"
@@ -141,9 +146,9 @@ export class WebsiteComponent implements OnInit {
       let tim = setTimeout(() => {
         if (p == 1) {
           clearTimeout(tim);
-          // elem.style.pointerEvents = "auto";
-          elem.style.backgroundColor = "#000000";
+          // elem.style.backgroundColor = "##112240";
           elem.style.color = this.EFFECT_COLOR;
+          elem.style.pointerEvents = "auto";
         }
         let upText = t.join("");
         elem.innerHTML = upText;

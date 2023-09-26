@@ -2,36 +2,36 @@
 
     <header class="header" id="header">
         <nav class="nav container">
-            <div class="nav__logo" (click)="scrollToElement(home)">JustAnotherDev</div>
+            <div class="nav__logo decode" (click)="scrollToElement(home)">JustAnotherDev</div>
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <div class="nav__link" (click)="scrollToElement(home)">
+                        <div class="nav__link decode" (click)="scrollToElement(home)">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </div>
                     </li>
                     <li class="nav__item">
-                        <div class="nav__link" (click)="scrollToElement(about)">
+                        <div class="nav__link decode" (click)="scrollToElement(about)">
                             <i class="uil uil-user nav__icon"></i> About
                         </div>
                     </li>
                     <li class="nav__item">
-                        <div class="nav__link" (click)="scrollToElement(skills)">
+                        <div class="nav__link decode" (click)="scrollToElement(skills)">
                             <i class="uil uil-file-alt nav__icon"></i> Skills
                         </div>
                     </li>
                     <li class="nav__item">
-                        <div class="nav__link" (click)="scrollToElement(qualification)">
+                        <div class="nav__link decode" (click)="scrollToElement(qualification)">
                             <i class="uil uil-briefcase-alt nav__icon"></i> Qualification
                         </div>
                     </li>
                     <li class="nav__item">
-                        <div class="nav__link" (click)="scrollToElement(projects)">
+                        <div class="nav__link decode" (click)="scrollToElement(projects)">
                             <i class="uil uil-scenery nav__icon"></i> Projects
                         </div>
                     </li>
                     <li class="nav__item">
-                        <div class="nav__link" (click)="scrollToElement(contactme)">
+                        <div class="nav__link decode" (click)="scrollToElement(contactme)">
                             <i class="uil uil-message nav__icon"></i> Contactme
                         </div>
                     </li>
@@ -71,7 +71,7 @@
                     <div class="home__data">
                         <!-- <h1 class="home__greet">Hello there,</h1> -->
                         <h3 class="home__greet"> {{"\<h3> Hello there <\/h3>"}}</h3>
-                        <h1 class="home__title">I'm Sebastian</h1>
+                        <h1 class="home__title decode">I'm Sebastian</h1>
                         <h3 class="home__subtitle"> {{"\<h2> Software Engineer <\/h2>"}}</h3>
                         <!-- <h3 class="home__subtitle"> Software Engineer</h3> -->
                         <p class="home__description"> {{"\<p> Passioned about automation. Have experience in Web and Mobile development, currently in way to learn all I can about DevOps Tech. I like to find ways to improve Developer Experience (DX) for me and my team. <\/p>"}}</p>
@@ -95,8 +95,8 @@
             </div>
         </section>
         <section #about class="about section" id="about">
-            <h2 class="section__title">About Me</h2>
-            <span class="section__subtitle">My introduction</span>
+            <h2 class="section__title decode">About Me</h2>
+            <span class="section__subtitle decode">My introduction</span>
             <div class="about__container container grid">
                 <img src="../../../assets/images/landscape_image_placeholder.svg" alt="">
                 <div>
@@ -129,8 +129,8 @@
             </div>
         </section>
         <section #skills class="skills section" id="skills">
-            <h2 class="section__title">Skills</h2>
-            <span class="section__subtitle">My technical level</span>
+            <h2 class="section__title decode">Skills</h2>
+            <span class="section__subtitle decode">My technical level</span>
             <div class="skills__container container grid">
 
                 <div class="skills__content skills__open">
@@ -149,7 +149,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Linux</h3>
-                                <span class="skills__number">Ultimate</span>
+                                <span class="skills__number">Strongly Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__linux"></span>
@@ -159,7 +159,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Docker</h3>
-                                <span class="skills__number">Ultimate</span>
+                                <span class="skills__number">Very Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__docker"></span>
@@ -169,7 +169,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Kubernetes</h3>
-                                <span class="skills__number">Champion</span>
+                                <span class="skills__number">Very Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__kubernetes"></span>
@@ -179,7 +179,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Jenkins</h3>
-                                <span class="skills__number">Rookie</span>
+                                <span class="skills__number">Learning</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__jenkins"></span>
@@ -202,7 +202,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Clean Architecture</h3>
-                                <span class="skills__number">Ultimate</span>
+                                <span class="skills__number">Very Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__clean_arch"></span>
@@ -212,7 +212,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Architectural Patterns</h3>
-                                <span class="skills__number">Ultimate</span>
+                                <span class="skills__number">Very Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__arch_patterns"></span>
@@ -221,11 +221,11 @@
 
                         <div class="skills__data">
                             <div class="skills__titles">
-                                <h3 class="skills__name">Enterprise Patterns</h3>
-                                <span class="skills__number">Champion</span>
+                                <h3 class="skills__name">Architecture Diagrams</h3>
+                                <span class="skills__number">Familiar</span>
                             </div>
                             <div class="skills__bar">
-                                <span class="skills__percentage skills__entr_patterns"></span>
+                                <span class="skills__percentage skills__arch_diagrams"></span>
                             </div>
                         </div>
                     </div>
@@ -247,7 +247,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Git</h3>
-                                <span class="skills__number">Mega</span>
+                                <span class="skills__number">Strongly Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__git"></span>
@@ -256,7 +256,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">AngularJS</h3>
-                                <span class="skills__number">Ultimate</span>
+                                <span class="skills__number">Very Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__angular"></span>
@@ -265,7 +265,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">NodeJS</h3>
-                                <span class="skills__number">Ultimate</span>
+                                <span class="skills__number">Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__nodejs"></span>
@@ -274,7 +274,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Java</h3>
-                                <span class="skills__number">Champion</span>
+                                <span class="skills__number">Very Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__angular"></span>
@@ -283,7 +283,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Firebase</h3>
-                                <span class="skills__number">Champion</span>
+                                <span class="skills__number">Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__firebase"></span>
@@ -316,7 +316,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Android</h3>
-                                <span class="skills__number">Champion</span>
+                                <span class="skills__number">Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__android"></span>
@@ -326,7 +326,7 @@
                         <div class="skills__data">
                             <div class="skills__titles">
                                 <h3 class="skills__name">Flutter</h3>
-                                <span class="skills__number">Champion</span>
+                                <span class="skills__number">Familiar</span>
                             </div>
                             <div class="skills__bar">
                                 <span class="skills__percentage skills__flutter"></span>
@@ -342,48 +342,30 @@
             </div>
         </section>
         <section #qualification class="qualification section">
-            <h2 class="section__title">Qualification</h2>
-            <span class="section__subtitle">My Tech Path</span>
+            <h2 class="section__title decode">Qualification</h2>
+            <span class="section__subtitle decode">My Tech Path</span>
             <div class="qualification__container container">
                 <app-tabs>
-                    <app-tab title='Education' icon="uil-graduation-cap" class="qualification__sections">
+                    <app-tab title="Work" icon="uil-briefcase-alt" class="qualification__sections">
                         <div class="qualification__content">
-                            <div class="qualification__data">
-                                <div>
-                                    <h3 class="qualification__title">Systems Engineer</h3>
-                                    <span class="qualification__subtitle">University of Lima - Peru</span>
-                                    <div class="qualification__calendar">
-                                        <i class="uil uil-calender"></i>
-                                        2014 - 2020
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification__rounder"></span>
-                                    <span class="qualification__line "></span>
-                                </div>
-                            </div>
                             <div class="qualification__data">
                                 <div></div>
 
                                 <div>
                                     <span class="qualification__rounder"></span>
-                                    <!-- <span class="qualification__line "></span> -->
+                                    <span class="qualification__line "></span>
                                 </div>
 
                                 <div>
-                                    <h3 class="qualification__title">Systems Engineer</h3>
-                                    <span class="qualification__subtitle">University of Lima - Peru</span>
+                                    <h3 class="qualification__title">Co-Founder</h3>
+                                    <span class="qualification__subtitle">PetPal - Peru</span>
                                     <div class="qualification__calendar">
                                         <i class="uil uil-calender"></i>
-                                        2014 - 2020
+                                        2023 - Present
                                     </div>
                                 </div>
-
+                    
                             </div>
-                        </div>
-                    </app-tab>
-                    <app-tab title="Work" icon="uil-briefcase-alt" class="qualification__sections">
-                        <div class="qualification__content">
                             <div class="qualification__data">
                                 <div>
                                     <h3 class="qualification__title">Software Development Specialist II</h3>
@@ -435,12 +417,47 @@
                             </div>
                         </div>
                     </app-tab>
+                    <app-tab title='Education' icon="uil-graduation-cap" class="qualification__sections">
+                        <div class="qualification__content">
+                            <div class="qualification__data">
+                                <div>
+                                    <h3 class="qualification__title">Systems Engineer</h3>
+                                    <span class="qualification__subtitle">University of Lima - Peru</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calender"></i>
+                                        2014 - 2020
+                                    </div>
+                                </div>
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                    <!-- <span class="qualification__line "></span> -->
+                                </div>
+                            </div>
+                            <!-- <div class="qualification__data">
+                                <div></div>
+
+                                <div>
+                                    <span class="qualification__rounder"></span>
+                                </div>
+
+                                <div>
+                                    <h3 class="qualification__title">Systems Engineer</h3>
+                                    <span class="qualification__subtitle">University of Lima - Peru</span>
+                                    <div class="qualification__calendar">
+                                        <i class="uil uil-calender"></i>
+                                        2014 - 2020
+                                    </div>
+                                </div>
+
+                            </div> -->
+                        </div>
+                    </app-tab>
                 </app-tabs>
             </div>
         </section>
         <section #projects class="projects section">
-            <h2 class="section__title">Projects</h2>
-            <span class="section__subtitle">Most recent work</span>
+            <h2 class="section__title decode">Projects</h2>
+            <span class="section__subtitle decode">Most recent work</span>
             <!-- <div > -->
             <app-carousel [slides]="slides" class="projects__container container">
                 <ng-template let-slide>
@@ -457,11 +474,11 @@
                                 and
                                 interest.</p> -->
                             <div class="projects_button_container">
-                                <div *ngIf="slide.site" class="button button--flex button--small projects__button">
+                                <div *ngIf="slide.site" class="button button--flex button--small projects__button" (click)="openExternalUrl(slide.site)">
                                     Website
                                     <i class="uil uil-link button__icon"></i>
                                 </div>
-                                <div *ngIf="slide.repo" class="button button--flex button--small projects__button">
+                                <div *ngIf="slide.repo" class="button button--flex button--small projects__button" (click)="openExternalUrl(slide.repo)">
                                     Source
                                     <i class="uil uil-code-branch button__icon"></i>
                                 </div>
@@ -472,40 +489,25 @@
                 </ng-template>
             </app-carousel>
         </section>
-        <!-- <section #idea class="idea section">
-            <div class="idea__bg">
-                <div class="idea__container container grid">
-                    <div class="idea__data">
-                        <h2 class="idea__title">You have any project or idea?</h2>
-                        <p class="idea__description">Feel free to contact me, I'll be glad to help you with it.</p>
-                        <div class="button button--flex button--white idea__button">
-                            Contact Me
-                            <i class="uil uil-message idea__icon button__icon"></i>
-                        </div>
-                    </div>
-                    <img src="" alt="" class="idea__img">
-                </div>
-            </div>
-
-        </section> -->
+        
         <section #contactme class="contact section">
-            <h2 class="section__title">Contact Me</h2>
-            <span class="section__subtitle">Get in touch</span>
+            <h2 class="section__title decode">Contact Me</h2>
+            <span class="section__subtitle decode">Get in touch</span>
             <div class="contact__container container grid">
                 <div>
                     <div class="contact__information">
                         <i class="uil uil-envelope contact__icon"></i>
                         <div>
-                            <h3 class="contact__title">Email.</h3>
-                            <span class="contact__subtitle">sebastian@justanotherdev.com</span>
+                            <h3 class="contact__title decode">Email.</h3>
+                            <span class="contact__subtitle decode">sebastian@justanotherdev.com</span>
                         </div>
                     </div>
 
                     <div class="contact__information">
                         <i class="uil uil-map-marker contact__icon"></i>
                         <div>
-                            <h3 class="contact__title">Location.</h3>
-                            <span class="contact__subtitle">Lima - Peru</span>
+                            <h3 class="contact__title decode">Location.</h3>
+                            <span class="contact__subtitle decode">Lima - Peru</span>
                         </div>
                     </div>
                 </div>
